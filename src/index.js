@@ -1,17 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'; //importação do módulo principal do react
+import ReactDOM from 'react-dom'; //para exibir o nosso DOM
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './components/App'; //Módulo principal do nosso sistema
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ReactDOM.render(
+    <App />, //Os módulos são escritos como se fossem uma tag html
+    document.getElementById("root") //tudo que for renderizado no sistema, será renderizado dentro da id root
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
