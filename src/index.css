@@ -17,25 +17,38 @@ a{
 .nav{
     background: #000;
 }
-.nav a{
-    text-align: center;
-    padding: 10px 0;
-    color: #fff;
-}
-.nav a:hover{
-    background: #666;
-}
+    .nav a{
+        text-align: center;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .nav a:hover{
+        background: #666;
+    }
+
+
 /*As medias queries trabalham com responsividade*/
-@media screen and (max-width: 480px) { /*Para mobile bem pequenos*/
+@media screen and (max-width: 480px) { /*Para mobile bem pequenos - small smartphones*/
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
     .nav{
         display: none;
-        flex-direction: column;  
+        flex-direction: column; 
+        order:2; /*Para que o botao apareça por cima */
     }
-    .nav a{/*estilização dos links que estao na Nav */
-        width: 100%;
+        .nav a{/*estilização dos links que estao na Nav */
+            width: 100%;
+        }
+    .buttonMob{
+        order:1; /*Para que o botao apareça por cima */
+        text-align: right;
+        padding: 5px 5% 5px 0;
     }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) { /*Para tablets*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) { /*Para tablets - Medium smartphones*/
     .nav{
         display: none;
         flex-direction: column;
@@ -44,21 +57,47 @@ a{
         width: 100%;
     }
     
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        display: none;
+        flex-direction: column; 
+        order:2; /*Para que o botao apareça por cima */
+    }
+        .nav a{/*estilização dos links que estao na Nav */
+            width: 100%;
+        }
+    .buttonMob{
+        order:1; /*Para que o botao apareça por cima */
+        text-align: right;
+        padding: 5px 5% 5px 0;
+    }
 }
-@media screen and (min-width: 769px) and (max-width: 1199px) { /*Para pequenos notebooks*/
+
+@media screen and (min-width: 769px) and (max-width: 1199px) { /*Para pequenos notebooks - Large smartphones*/
     .nav{
         display: flex;
     }
-    .nav a{/*estilização dos links que estao na Nav */
-        width: 25%;
+        .nav a{/*estilização dos links que estao na Nav */
+            width: 25%;
+        }
+    .buttonMob {
+        display: none;
     }
 }
-@media screen and (min-width: 1200px) { /*Para telas maiores*/
+
+@media screen and (min-width: 1200px) { /*Para telas maiores - XLarges*/
     .nav{
         display: flex;
     }
-    .nav a{/*estilização dos links que estao na Nav */
-        width: 25%;
+        .nav a{/*estilização dos links que estao na Nav */
+            width: 25%;
+        }
+
+    .buttonMob {
+        display: none;
     }
     
 }
