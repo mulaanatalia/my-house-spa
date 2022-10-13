@@ -1,3 +1,26 @@
+
+My-House
+
+Description
+My house is a web system. I'm developing to practice my knowledge of React Js and Single Page Applications. The system allows people interested in renting or buying a property, to see available properties and their location through the map. The System has the contact of the owner so that the client can communicate with the owner and a registration form so that the client can communicate the owner of the property through the system.
+
+In short, the system will allow:
+•	See available properties;
+•	View the property details through slides and will also have a description;
+•	See the contact of the owner of the property;
+•	See the address of the property through the map;
+•	Fill in the registration form to contact the owner.
+
+Technologies/tools used
+•	React JS;
+•	css;
+•	HTML5;
+•	Bootstrap.
+
+How to use the system?
+To use the system will be quite simple. Just have the link, access to the Internet, access and view all available properties, the location of the property, the owner's contact and the registration form, all on a single page.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
