@@ -2,7 +2,8 @@
 My-House
 
 Description
-My house is a web system. I'm developing to practice my knowledge of React Js and Single Page Applications. The system allows people interested in renting or buying a property, to see available properties and their location through the map. The System has the contact of the owner so that the client can communicate with the owner and a registration form so that the client can communicate the owner of the property through the system.
+My house is a web system. I'm developing to practice my knowledge of React Js and Single Page Applications. 
+The system allows people interested in renting or buying a property, to see available properties and their location through the map. The System has the contact of the owner so that the client can communicate with the owner and a registration form so that the client can communicate the owner of the property through the system.
 
 In short, the system will allow:
 •	See available properties;
