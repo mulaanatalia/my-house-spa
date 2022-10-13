@@ -15,7 +15,7 @@ a{
 }
 
 .nav{
-    background: #000;
+    background: rgb(7, 89, 145);
 }
     .nav a{
         text-align: center;
@@ -23,7 +23,7 @@ a{
         color: #fff;
     }
     .nav a:hover{
-        background: #666;
+        background: rgb(114, 183, 223);
     }
 
 
@@ -44,8 +44,29 @@ a{
     .buttonMob{
         order:1; /*Para que o botao apareça por cima */
         text-align: right;
-        padding: 5px 5% 5px 0;
+        padding: 7px 5% 7px 0;
     }
+    /*Logotipo e enderço*/
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 5%;
+
+    }
+    .address{
+        order:3;
+        padding: 10px 5%;
+        line-height: 35px;
+        color: #fff;
+        text-align: center;
+        background: #51a8b1;
+    }
+        .address img{
+            vertical-align: middle;
+        }
+        .address strong{
+            font-size: 27px;
+        }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) { /*Para tablets - Medium smartphones*/
@@ -86,9 +107,30 @@ a{
     .buttonMob {
         display: none;
     }
+    /*Logotipo e endereço*/
+    .logo{
+        float: left;
+        width: 30%;
+        padding: 15px 0 15px 10%;
+
+    }
+    .address{
+        float: left;
+        width: 70%;
+        padding: 20px 5% 10px 20%;
+        line-height: 35px;
+        text-align: center;
+    }
+        .address img{
+            vertical-align: middle;
+        }
+        .address strong{
+            color: rgb(7, 136, 39);
+            font-size: 24px;
+        }
 }
 
-@media screen and (min-width: 1200px) { /*Para telas maiores - XLarges*/
+@media screen and (min-width: 1200px) { /*Para telas maiores - XLarges Screens*/
     .nav{
         display: flex;
     }
@@ -99,5 +141,25 @@ a{
     .buttonMob {
         display: none;
     }
-    
+
+    .logo{
+        float: left;
+        width: 30%;
+        padding: 15px 0 15px 10%;
+
+    }
+    .address{
+        float: left;
+        width: 70%;
+        padding: 20px 5% 10px 20%;
+        line-height: 35px;
+        text-align: center;
+    }
+        .address img{
+            vertical-align: middle;
+        }
+        .address strong{
+            color: rgb(7, 136, 39);
+            font-size: 24px;
+        }
 }
